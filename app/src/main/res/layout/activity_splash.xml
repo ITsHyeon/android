@@ -39,6 +39,7 @@
             android:text="연결하다, 지급하다, 가능성의 나를"/>
 
     <EditText
+            android:id="@+id/idEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -52,9 +53,10 @@
             android:inputType="textEmailAddress"
             android:textSize="12sp"
             android:fontFamily="@font/yoon_go_thic_320_0"
-            android:hint="email"/>
+            android:hint="id"/>
 
     <EditText
+            android:id="@+id/pwEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"

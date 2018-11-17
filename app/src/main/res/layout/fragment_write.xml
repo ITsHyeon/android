@@ -17,7 +17,7 @@
             android:text="글 쓰기"/>
 
     <EditText
-            android:id="@+id/title"
+            android:id="@+id/titleEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -34,7 +34,7 @@
             android:hint="title"/>
 
     <EditText
-            android:id="@+id/subTitle"
+            android:id="@+id/subTitleEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -51,12 +51,14 @@
             android:hint="sub title"/>
 
     <EditText
-            android:id="@+id/content"
+            android:id="@+id/descEdit"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginStart="36dp"
             android:layout_marginEnd="36dp"
             android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:gravity="top"
             android:background="@drawable/textarea"
             android:fontFamily="@font/yoon_go_thic_320_0"/>
 

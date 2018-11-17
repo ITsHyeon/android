@@ -30,6 +30,7 @@
             android:text="회원가입"/>
 
     <EditText
+            android:id="@+id/emailEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -46,6 +47,7 @@
             android:hint="email"/>
 
     <EditText
+            android:id="@+id/pwEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -56,12 +58,13 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/box_gray_stroke_radius"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textSize="12sp"
             android:fontFamily="@font/yoon_go_thic_320_0"
             android:hint="pw"/>
 
     <EditText
+            android:id="@+id/pwConfirmEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -72,12 +75,13 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/box_gray_stroke_radius"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textSize="12sp"
             android:fontFamily="@font/yoon_go_thic_320_0"
             android:hint="pw confirm"/>
 
     <EditText
+            android:id="@+id/nameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -88,12 +92,13 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/box_gray_stroke_radius"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:textSize="12sp"
             android:fontFamily="@font/yoon_go_thic_320_0"
             android:hint="name"/>
 
     <EditText
+            android:id="@+id/phoneEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -104,7 +109,7 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/box_gray_stroke_radius"
-            android:inputType="textEmailAddress"
+            android:inputType="phone"
             android:textSize="12sp"
             android:fontFamily="@font/yoon_go_thic_320_0"
             android:hint="phone"/>

@@ -120,14 +120,14 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/yoon_go_thic_320_0"
                     android:textColor="@android:color/black"
-                    android:text="생일"/>
+                    android:text="주소"/>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/yoon_go_thic_320_0"
-                    android:text="2000.10.10"/>
+                    android:text="서울특별시 한양대"/>
         </RelativeLayout>
 
         <View
@@ -150,14 +150,14 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/yoon_go_thic_320_0"
                     android:textColor="@android:color/black"
-                    android:text="생일"/>
+                    android:text="이메일"/>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/yoon_go_thic_320_0"
-                    android:text="2000.10.10"/>
+                    android:text="hihi.naver.com"/>
         </RelativeLayout>
 
         <View
@@ -181,14 +181,14 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/yoon_go_thic_320_0"
                     android:textColor="@android:color/black"
-                    android:text="생일"/>
+                    android:text="학력"/>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/yoon_go_thic_320_0"
-                    android:text="2000.10.10"/>
+                    android:text="한양대학교"/>
         </RelativeLayout>
 
 

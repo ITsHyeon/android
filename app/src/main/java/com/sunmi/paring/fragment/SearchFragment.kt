@@ -11,6 +11,7 @@ import com.github.nitrico.lastadapter.LastAdapter
 import com.sunmi.paring.BR
 import com.sunmi.paring.R
 import com.sunmi.paring.databinding.ItemProjectBinding
+import com.sunmi.paring.model.Project
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class SearchFragment : Fragment() {
@@ -23,12 +24,8 @@ class SearchFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_search, container, false)
     }
 
-    var items = ArrayList<String>().apply {
-        add("")
-        add("")
-        add("")
-        add("")
-        add("")
+    var items = ArrayList<Project>().apply {
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -41,7 +38,7 @@ class SearchFragment : Fragment() {
     private fun setRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = LastAdapter(items, BR.item)
-            .map<String, ItemProjectBinding>(R.layout.item_project) {
+            .map<Project, ItemProjectBinding>(R.layout.item_project) {
 
             }
     }

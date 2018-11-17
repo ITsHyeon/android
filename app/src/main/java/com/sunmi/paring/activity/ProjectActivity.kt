@@ -10,6 +10,7 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
 import android.widget.FrameLayout
@@ -20,6 +21,7 @@ import com.sunmi.paring.R
 import com.sunmi.paring.adapter.ProjectViewPagerAdapter
 import com.sunmi.paring.databinding.ItemSponsorBinding
 import com.sunmi.paring.fragment.ProjectFragment
+import com.sunmi.paring.util.DataHelper
 import com.sunmi.paring.util.StatusBarUtil
 import kotlinx.android.synthetic.main.activity_project.*
 import kotlinx.android.synthetic.main.fragment_project.view.*
@@ -83,22 +85,25 @@ class ProjectActivity : AppCompatActivity() {
 
     private fun initViewPager() {
         viewPager.run {
-            adapter = ProjectViewPagerAdapter(supportFragmentManager)
+            adapter = ProjectViewPagerAdapter(supportFragmentManager, DataHelper.dataHelper!!.selectProject.posts)
             pageMargin = makeDP(this@ProjectActivity, 12f).toInt()
 
             viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
                 override fun onGlobalLayout() {
-                    val page = (viewPager.adapter!!.instantiateItem(viewPager, 0)) as ProjectFragment
-                    currentFragment = page.view!!
+//                    val page = (viewPager.adapter!!.instantiateItem(viewPager, 0)) as ProjectFragment
+//                    Log.e("asfd", "${page.view}")
+//                    currentFragment = page.view!!
                     viewTreeObserver.removeOnGlobalLayoutListener(this)
                 }
             })
             onPageChangeListener {
                 onPageSelected {
-                    val page = (viewPager.adapter!!.instantiateItem(viewPager, it)) as ProjectFragment
-                    currentFragment = page.view!!
+                    DataHelper.dataHelper!!.selectPost = DataHelper.dataHelper!!.selectProject.posts[it]
+//                    val page = (viewPager.adapter!!.instantiateItem(viewPager, it)) as ProjectFragment
+//                    currentFragment = page.view!!
                 }
             }
+            DataHelper.dataHelper!!.selectPost = DataHelper.dataHelper!!.selectProject.posts[0]
         }
     }
 
