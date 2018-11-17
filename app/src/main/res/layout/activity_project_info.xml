@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ProjectInfoActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+            <ImageView
+                    android:id="@+id/thumbNail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="28dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/backButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chevron_left"/>
+
+                <TextView
+                        android:id="@+id/dateText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:fontFamily="@font/yoon_go_thic_360_0"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="18.11.17"/>
+
+                <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/yoon_go_thic_320_0"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:text="프로젝트 제목"/>
+
+                <TextView
+                        android:id="@+id/subTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/yoon_go_thic_320_0"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="프로젝트 소 제목"/>
+
+                <TextView
+                        android:id="@+id/sponsorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:fontFamily="@font/yoon_go_thic_320_0"
+                        android:textSize="14sp"
+                        android:text="후원자 5명"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/yoon_go_thic_320_0"
+                android:id="@+id/projectContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="28dp"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

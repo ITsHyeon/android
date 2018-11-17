@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="64dp"/>
+
+    <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            app:backgroundColor="@android:color/transparent"
+            app:shadowColor="#33000000"
+            app:shadowRadius="8dp"
+            app:shadowMarginTop="8dp">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white">
+
+            <ImageView
+                    android:id="@+id/tab1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tab2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_home"/>
+
+            <ImageView
+                    android:id="@+id/tab2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:layout_constraintStart_toEndOf="@id/tab1"
+                    app:layout_constraintEnd_toStartOf="@id/tab3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_create"/>
+
+            <ImageView
+                    android:id="@+id/tab3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:layout_constraintStart_toEndOf="@id/tab2"
+                    app:layout_constraintEnd_toStartOf="@id/tab4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_person"/>
+
+            <ImageView
+                    android:id="@+id/tab4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:layout_constraintStart_toEndOf="@id/tab3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_search"/>
+        </android.support.constraint.ConstraintLayout>
+    </com.loopeer.shadow.ShadowView>
+</RelativeLayout>

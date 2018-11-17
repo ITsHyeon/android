@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.loopeer.shadow.ShadowView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/projectContainer"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:shadowMarginTop="6dp"
+        app:shadowDy="6"
+        app:cornerRadius="18dp"
+        app:shadowColor="#33000000"
+        app:shadowMarginLeft="4dp"
+        app:shadowMarginBottom="6dp"
+        app:shadowMarginRight="4dp"
+        app:shadowRadius="8dp">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp">
+
+        <ImageView
+                android:id="@+id/thumbNail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="18dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/yoon_go_thic_360_0"
+                    android:textColor="@android:color/black"
+                    android:text="18.11.17"/>
+
+            <TextView
+                    android:id="@+id/titleText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/yoon_go_thic_320_0"
+                    android:textColor="@android:color/black"
+                    android:text="프로젝트 제목"/>
+
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/sponsorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/yoon_go_thic_320_0"
+                    android:textColor="@android:color/black"
+                    android:text="후원자: 5명"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.loopeer.shadow.ShadowView>
